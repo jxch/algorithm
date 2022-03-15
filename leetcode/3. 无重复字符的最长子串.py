@@ -3,7 +3,7 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         res = 0
-        substring = ''
+        substring = '' # 滑动窗口
         for i in range(len(s)):
             if s[i] not in substring:
                 substring += s[i]
